@@ -11,6 +11,10 @@
 </head>
 
 <body>
+    <video autoplay loop muted playsinline class="background-video">
+        <source src="Assets/ROYALTY FREE Educational Music _ School Promo Background Royalty Free Music by MUSIC4VIDEO - Music for Video Library (720p, h264).mp4" type="video/mp4">
+    </video>
+    <div class="background-overlay"></div>
     <header class="header">
         <nav>
             <h1 class="logo">Class Nest</h1>

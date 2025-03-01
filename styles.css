@@ -20,19 +20,27 @@
 
 header{
     position: fixed;
-    padding: 15px 20px;
-    background-color: var(--primary-color);
+    top: 0;
+    left: 0;
     width: 100%;
     height: 4.5rem;
-    z-index: 1;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 header .logo {
+    position: relative;
     font-size: 2.5rem;
     font-weight: 600;
-    color: var(--neutral-color);
-    text-shadow: 2px 2px 5px #2d2d2d;
+    color: var(--white-color);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transition: color .3s;
+    bottom: 0.188rem;
 }
 
 header .logo:hover {
@@ -48,11 +56,11 @@ header .logo:hover {
     align-items: center;
     margin-left: auto;
     bottom: 3.5rem; 
-    right: 1.5rem;  
+    right: 0.4rem;  
 }
 
 .links ul {
-   list-style: none;
+    list-style: none;
     display: flex;
     align-items: center;
     margin: 0;
@@ -60,8 +68,7 @@ header .logo:hover {
 }
 
 .links ul li {
-    margin-left: 20px;
-    
+    margin-left: 30px;    
 }
 
 .links ul li a{
@@ -71,12 +78,11 @@ header .logo:hover {
     font-size: 1.2rem;
     font-weight: 400;
     padding: 10px 15px;
-    text-shadow: 1px 1px 1px #000000;
-    transition: .3s;
+    text-shadow: 1px 1px 1px #000000;    
 }
 
 .links ul li a:hover {
-    color: var(--secondary-color);
+    color: var(--accent-color);
     text-shadow: 3px 3px 5px #333333;
 }
 
@@ -101,6 +107,24 @@ header .logo:hover {
     color: var(--white-color);
 }
 
+/* Background Video */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(50%);
+}
 
-
-
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
