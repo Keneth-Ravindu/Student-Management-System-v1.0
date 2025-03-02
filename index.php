@@ -32,9 +32,9 @@
         </nav>
     </header>
     <!--########## Section 1 ##########-->
-    <div class="section_1">
-        <div class="vision_container">
-            <h1 class="vision">
+    <div class="section1">
+        <div class="vision-container">
+            <h1 class="vision_heading">
                 A well-organized platform for managing student data
             </h1>
         </div>
