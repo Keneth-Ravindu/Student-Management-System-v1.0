@@ -131,24 +131,6 @@ header .logo:hover {
 
 /* Vision Section */
 
-.vision_container{
-    position: absolute;
-    top: 50%;
-    color: white;
-    left: 53%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 80%;
-    max-width: 800px;
-}
 
-.vision{
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--white-color);
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px 40px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
+
+
