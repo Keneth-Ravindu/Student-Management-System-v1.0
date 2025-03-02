@@ -12,7 +12,7 @@
 
 <body>
     <video autoplay loop muted playsinline class="background-video">
-        <source src="Assets/Classroom.mp4" type="video/mp4">
+        <source src="Assets/classroom.mp4" type="video/mp4">
     </video>
     <div class="background-overlay"></div>
     <header class="header">
@@ -35,8 +35,27 @@
     <div class="section1">
         <div class="vision-container">
             <h1 class="vision_heading">
-                A well-organized platform for managing student data
+                A well-organized platform for managing student and teacher data
             </h1>
+        </div>
+    </div>
+
+    <!--########## Section 2 ##########-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img class="image1" src="Assets/Images/school.jpg" alt="">
+            </div>
+
+            <div class="col-md-8">
+                <h1 class="description_heading">
+                    Welcome to class nest
+                </h1>
+                <p class="school_description">
+                    Class Nest enables to efficiently organize student records, teacher information, and available courses, ensuring easy access and management. Teachers can view student lists and assigned courses, while students can explore their enrolled subjects and instructors.
+                    By simplifying data management, this platform enhances transparency, efficiency, and organization in educational institutions, making it easier to monitor academic activities and maintain structured records. 📊🎓
+                </p>
+            </div>
         </div>
     </div>
 </body>
