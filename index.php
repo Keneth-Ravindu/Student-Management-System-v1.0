@@ -12,7 +12,7 @@
 
 <body>
     <video autoplay loop muted playsinline class="background-video">
-        <source src="Assets/ROYALTY FREE Educational Music _ School Promo Background Royalty Free Music by MUSIC4VIDEO - Music for Video Library (720p, h264).mp4" type="video/mp4">
+        <source src="Assets/Classroom.mp4" type="video/mp4">
     </video>
     <div class="background-overlay"></div>
     <header class="header">
@@ -31,6 +31,14 @@
 
         </nav>
     </header>
+    <!--########## Section 1 ##########-->
+    <div class="section_1">
+        <div class="vision_container">
+            <h1 class="vision">
+                A well-organized platform for managing student data
+            </h1>
+        </div>
+    </div>
 </body>
 
 </html>
