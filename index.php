@@ -58,6 +58,38 @@
             </div>
         </div>
     </div>
+
+    <!--########## Section 3 ##########-->
+    <div class="teacher_container">
+        <center>
+            <h1 class="teacher_heading">
+                Our instructors
+            </h1>
+        </center>
+
+        <div class="row">
+            <div class="col-md-4">
+                <img class="teacher" src="Assets/Images/teacher1.jpg" alt="">
+                <p class="teacher_description">
+                    Ms. Sarah Mitchell is a nurturing and enthusiastic kindergarten teacher with a passion for early childhood education. She creates a warm and welcoming classroom where young learners feel safe to explore, grow, and develop a love for learning.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img class="teacher" src="Assets/Images/teacher2.jpg" alt="">
+                <p class="teacher_description">
+                    Mrs. Laura Thompson is a dynamic high school science teacher specializing in biology and environmental science. With over a decade of experience, she brings excitement to the classroom through hands-on experiments, field trips, and real-world applications of science.
+                </p>
+            </div>
+
+            <div class="col-md-4">
+                <img class="teacher" src="Assets/Images/teacher3.jpg" alt="">
+                <p class="teacher_description">
+                    Dr. Natalie Collins is a passionate history professor with expertise in modern world history and cultural studies. With a Ph.D. in History, she encourages students to think critically about historical events and their impact on today's society.
+                </p>
+            </div>
+        </div>
+
+    </div>
 </body>
 
 </html>

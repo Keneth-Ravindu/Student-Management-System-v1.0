@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
+:root {
     --primary-color: #2D6A4F;
     --secondary-color: #52B788;
     --accent-color: #FFC107;
@@ -10,7 +10,6 @@
     --black-color: #000000;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +17,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
-header{
+body {
+    overflow-x: hidden;
+}
+
+/* HEADER */
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -26,21 +30,20 @@ header{
     height: 4.5rem;
     padding: 15px 20px;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     z-index: 100;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
 }
 
 header .logo {
     position: relative;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
     color: var(--white-color);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transition: 0.3s ease-in-out;
-    bottom: 0.188rem;
 }
 
 header .logo:hover {
@@ -49,37 +52,35 @@ header .logo:hover {
     cursor: pointer;
 }
 
-.links{
+.links {
     position: relative;
     float: right;
     display: flex;
     align-items: center;
     margin-left: auto;
-    bottom: 3.5rem; 
-    right: 0.4rem;  
+    bottom: 3.5rem;
+    right: 0.4rem;
 }
 
 .links ul {
     list-style: none;
     display: flex;
     align-items: center;
-    margin: 0;
-    padding: 0;
 }
 
 .links ul li {
-    margin-left: 30px;    
+    margin-left: 20px;
 }
 
-.links ul li a{
-    position: relative;
+.links ul li a {
     text-decoration: none;
     color: var(--white-color);
     font-size: 1.2rem;
-    font-weight: 400;
-    padding: 10px 15px;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
     text-shadow: 1px 1px 1px #000000;
-    transition: color 0.3s ease-in-out;    
+    position: relative;
+    top: 0.5rem;
 }
 
 .links ul li a:hover {
@@ -88,19 +89,18 @@ header .logo:hover {
 }
 
 .links ul li a.btn {
-    padding: 8px 20px;
-    border-radius: 8px;
+    padding: 8px 15px;
+    border-radius: 5px;
     font-size: 1.2rem;
-    font-weight: 400;
-    transition: background-color 0.3s ease-in-out, color 0.3s;    
+    transition: background-color 0.3s ease-in-out;
+
 }
 
 .links ul li a.btn-success {
     background-color: var(--accent-color);
     color: var(--dark-color);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    position: relative;
-    bottom: 0.25rem;
+    margin-top: 0.0114rem;
 }
 
 .links ul li a.btn-success:hover {
@@ -108,7 +108,7 @@ header .logo:hover {
     color: var(--white-color);
 }
 
-/* Background Video */
+/* BACKGROUND VIDEO */
 .background-video {
     position: fixed;
     top: 0;
@@ -130,66 +130,157 @@ header .logo:hover {
     z-index: -1;
 }
 
-/* ########## Vision Section ########## */
-
-.vision-container{
-    position: absolute;
-    top: 17%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* SECTION 1 - Vision */
+.vision-container {
+    position: relative;
+    margin-top: 6rem;
     text-align: center;
-    width: 80%;
+    width: 90%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.vision_heading{
+.vision_heading {
     font-size: 2rem;
     font-weight: 700;
-    text-transform: capitalize;
     color: var(--white-color);
     background: rgba(0, 0, 0, 0.5);
-    padding: 20px 40px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(247, 190, 2, 0.718);
 }
 
-/* ########## Section 2 ########## */
-.container{
-    position: absolute;
-    display: grid;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 80%;
+/* SECTION 2 - Welcome */
+.container {
+    margin-top: 50px;
+    max-width: 80%;
     background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px 60px;
+    box-shadow: 0px 4px 10px rgba(247, 190, 2, 0.718);
+    padding: 20px;
     border-radius: 15px;
 }
 
-.image1{
-    position: relative;
-    height: 250px;
-    left: 1.2rem;
-    top: 0;
-    box-shadow: 0px 4px 10px rgba(0, 255, 72, 0.263);
+.image1 {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-.school_description{
-    position: relative;
-    width: 85%;
-    left: 6rem;
-    text-align: left;
+.school_description {
     color: white;
-    text-shadow: 3px 3px 5px #ff5e007d
+    text-align: left;
+    margin-top: 10px;
 }
 
-.description_heading{
-    position: relative;
-    left: 1.8rem;
+.description_heading {
     color: var(--white-color);
-    text-transform:capitalize ;
-    margin-top: 0.45rem;
-    text-shadow: 3px 3px 5px #ffdd00b8
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+/* SECTION 3 - Teachers */
+.teacher_container {
+    text-align: center;
+    margin-top: 60px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 10px rgba(247, 190, 2, 0.718);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.teacher_heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.teacher_container .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.teacher {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 10px;
+}
+
+.teacher_description {
+    color: var(--white-color);
+    text-align: center;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 992px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .links ul {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    .links ul li {
+        margin: 5px 0;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .teacher_container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .vision_heading {
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .description_heading {
+        font-size: 1.2rem;
+    }
+
+    .teacher_container {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .vision_heading {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .description_heading {
+        font-size: 1rem;
+    }
+
+    .teacher {
+        max-width: 200px;
+    }
 }
