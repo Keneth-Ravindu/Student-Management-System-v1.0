@@ -1,5 +1,9 @@
 <?php
 
+error_reporting(0);
+
+session_start();
+
 $host = "localhost";
 
 $user = "root";
@@ -27,17 +31,31 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 
     if($row["usertype"]=="student")
     {
+        $_SESSION['username'] = $name;
+
+        $_SESSION['usertype'] = "student";
+
         header("location: studenthome.php");
     }
 
     elseif($row["usertype"]=="admin")
     {
+        $_SESSION['username'] = $name;
+
+        $_SESSION['usertype'] = "admin";
+
         header("location: adminhome.php");
     }
 
     else
     {
-        echo "username or password does not match";
+        session_start();
+
+        $message =  "username or password does not match";
+
+        $_SESSION['loginMessage'] = $message;
+
+        header("location:login.php");
     }
 
 }

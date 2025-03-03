@@ -13,6 +13,18 @@
     <div class="wrapper">
         <form action="login_check.php" method="POST">
             <h1>Login</h1>
+
+            <h4>
+                <?php
+                error_reporting(0);
+                session_start();
+                session_destroy();
+
+                echo $_SESSION['loginMessage'];
+                ?>
+            </h4>
+
+
             <div class="input-box">
                 <input type="text" placeholder="Username" name="username" required>
                 <i class='bx bxs-user'></i>
