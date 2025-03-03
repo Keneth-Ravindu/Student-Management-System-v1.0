@@ -2,12 +2,12 @@
 
     session_start();
 
-    if (!isset($_SESSION['username']))
+    if(!isset($_SESSION['username']))
     {
     header("location:login.php");
     }
 
-    elseif ($_SESSION['usertype']=='admin')
+    elseif($_SESSION['usertype']=='admin')
     {
         header("location:login.php");
     }
