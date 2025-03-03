@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Student Management System</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Styles/main_page.css">
 </head>
 
 <body>
@@ -25,7 +26,7 @@
                     <li><a href="">Admission</a></li>
                     <li><a href="">About Us</a></li>
                     <li><a href="">Contact</a></li>
-                    <li><a href="" class="btn btn-success">Login</a></li>
+                    <li><a href="login.php" class="btn btn-success">Login</a></li>
                 </ul>
             </div>
 
@@ -90,6 +91,84 @@
         </div>
 
     </div>
+    <br>
+
+    <!--########## Section 4 ##########-->
+
+    <div class="admission_container">
+        <center>
+            <h1 class="admission_heading">Admission Form</h1>
+        </center>
+
+        <div class="admission_form">
+            <form action="" class="form">
+                <div>
+                    <label class="label_text">Name</label>
+                    <input type="text" name="name" placeholder="Enter your full name">
+                </div>
+                <div>
+                    <label class="label_text">Email</label>
+                    <input type="email" name="email" placeholder="Enter your email">
+                </div>
+                <div>
+                    <label class="label_text">Contact Number</label>
+                    <input type="tel" name="contact" placeholder="Enter your contact number">
+                </div>
+                <div>
+                    <label class="label_text">Message</label>
+                    <textarea name="message" rows="4" placeholder="Enter your message"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <!--########## Section 5 ##########-->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- About Section -->
+            <div class="footer-section about">
+                <h3>Class Nest</h3>
+                <p>An innovative platform for seamless student and teacher data management.</p>
+            </div>
+
+            <!-- Contact Info Section -->
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Education Lane, City, Country</p>
+                <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                <p><i class="fas fa-envelope"></i> info@classnest.com</p>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="footer-section newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form action="#">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="footer-bottom">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>© 2025 Class Nest. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+
 </body>
 
 </html>
