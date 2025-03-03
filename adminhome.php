@@ -32,12 +32,12 @@
         <a href="">Admin Dashboard</a>
 
         <div class="logout">
-            <a href="" class="btn btn-primary">Logout</a>
+            <a href="logout.php" class="btn btn-primary">Logout</a>
         </div>
     </header>
 
     <aside>
-        <ul>
+        <ul class="sidebar_links">
             <li>
                 <a href="">Admission</a>
             </li>
@@ -56,6 +56,23 @@
             
         </ul>
     </aside>
+
+<div class="dashboard-container">
+    <h1 class="dashboard-title">Welcome to the Admin Dashboard</h1>
+    <p class="dashboard-description">
+        Welcome to the <strong>Admin Dashboard</strong>, your central hub for managing users, admissions, and records efficiently. 
+        As an administrator, you have full control over student and teacher management, admissions, and system settings.
+        <br><br>
+        Use the sidebar to <strong>navigate through different sections:</strong>
+        <ul>
+            <li><strong>Admissions:</strong> Process and review new student applications.</li>
+            <li><strong>Add & View Students:</strong> Register new students and manage their details.</li>
+            <li><strong>Add & View Teachers:</strong> Assign and manage teaching staff.</li>
+        </ul>
+        Stay organized and ensure smooth operations with this intuitive interface. If you need assistance, feel free to reach out to support. 🚀
+    </p>
+</div>
+
 
 
 </body>

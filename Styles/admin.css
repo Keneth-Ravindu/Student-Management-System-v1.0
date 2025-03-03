@@ -77,29 +77,27 @@ aside {
     z-index: 1;
 }
 
-aside ul {
+aside .sidebar_links {
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: center;
 }
 
-aside ul li {
+aside .sidebar_links li {
     padding: 15px;
-    text-align: left;
     transition: all 0.3s ease-in-out;
     position: relative;
-    left: 1rem;
-    width: 250px;
+    width: 200px;
 }
 
-aside ul li:hover {
+aside .sidebar_links li:hover {
     background: var(--hover-color);
-    
+    left: 0;
     
 }
 
-aside ul li a {
+aside .sidebar_links li a {
     text-decoration: none;
     color: var(--white-color);
     font-size: 18px;
@@ -112,29 +110,73 @@ aside ul li a {
 }
 
 /* Glowing Text Effect on Hover */
-aside ul li a:hover {
+aside .sidebar_links li a:hover {
     color: var(--black-color);
     font-weight: bold;
     text-shadow: 0px 0px 8px var(--white-color);
 }
 
-/* Sidebar Hover Effect */
-aside:hover {
-    width: 280px;
+/* Dashboard Container */
+.dashboard-container {
+    max-width: 800px;
+    margin: 80px auto 20px;
+    padding: 30px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    margin-top: 10rem;
+    margin-left: 38rem;
 }
 
-/* Sidebar Icons */
-aside ul li a::before {
-    position: absolute;
-    left: -20px;
-    opacity: 0;
-    transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+.dashboard-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+    text-shadow: 0px 0px 10px var(--accent-color);
+    transition: transform 0.3s ease-in-out;
 }
 
-aside ul li a:hover::before {
-    left: 5px;
-    opacity: 1;
+
+.dashboard-description {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--white-color);
+    line-height: 1.8;
+    text-align: left;
 }
+
+
+.dashboard-description ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.dashboard-description li {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: var(--hover-color);
+}
+
+
+.dashboard-container:hover {
+    transform: scale(1.05);
+    border-radius: 30px;
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    box-shadow: 0px 8px 20px rgba(255, 193, 7, 0.6);
+}
+
+
+.dashboard-title:hover {
+    transform: scale(1.1);
+    text-shadow: 0px 0px 15px var(--accent-color);
+}
+
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
@@ -147,11 +189,35 @@ aside ul li a:hover::before {
         width: 220px;
     }
 
-    aside ul li a {
+    aside .sidebar_links li a {
         font-size: 16px;
     }
 
     .header {
         padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dashboard-container {
+        padding: 20px;
+        margin: 100px 15px 20px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        width: 30rem;
+        margin-left: 5rem;
+    }
+
+    .dashboard-title {
+        font-size: 28px;
+    }
+
+    .dashboard-description {
+        font-size: 16px;
+    }
+
+    .dashboard-container:hover {
+        transform: scale(1.02);
+        border-radius: 25px;
     }
 }
